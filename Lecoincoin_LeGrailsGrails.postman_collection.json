@@ -1,0 +1,695 @@
+{
+	"info": {
+		"_postman_id": "0f6b8e95-cd0e-42cd-8e48-5fc2db1332af",
+		"name": "Lecoincoin_LeGrailsGrails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "get_json",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/api/user/17",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_xml",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/api/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put_json",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin2\",\r\n    \"password\": \"$2a$10$tHhwKbROp3Pk2qOrGQKICuCrmAcB5fnAPpm.AfXU0ZFsYRMqF0udm\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin29\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/user/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "get_json",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/api/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_xml",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/api/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"TataYoyo 1\",\r\n    \"password\": \"TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT\",\r\n    \"authorities\": [\r\n        {\r\n            \"authority\": \"ROLE_CLIENT\"\r\n        },\r\n        {\r\n            \"authority\": \"ROLE_ADMIN\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/users/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "annonce",
+			"item": [
+				{
+					"name": "get_xml",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/api/annonce/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_json",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/api/annonce/11",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put_json",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"Hugo Le Rigolo 3\",\r\n    \"price\" : 2.0,\r\n    \"active\": true,\r\n    \"description\": \"Annonce de fou furieux n°2\",\r\n    \"author\": {\r\n        \"id\": 5\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/annonce/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put_xml",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<root>\r\n    <title>Alice 1555f5</title>\r\n    <price>59.0</price>\r\n    <active>true</active>\r\n    <description>annonce de fou</description>\r\n    <author id=\"4\" />\r\n</root>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/annonce/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch_json",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"Hugo 69\",\r\n    \"price\" : 122.0,\r\n    \"description\": \"Annonce de fou furieux n°69\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/annonce/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch_xml",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<root>\r\n    <title>Ali Baba</title>\r\n    <price>0.50</price>\r\n    <description>The de fou</description>\r\n</root>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/annonce/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/api/annonce/11",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonce",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "annonces",
+			"item": [
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "localhost:8081/api/annonces/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonces",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"title\": \"Hugo_22\",\r\n    \"price\": 10.0,\r\n    \"illustrations\": [\r\n        {\r\n            \"data\": \"iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFBSURBVEhLxZZNrkRAFIWvn4T0gC0YiMTcBuzA1A6M7cDI1A7YgpmJ9FSshBWQnmjVdd/rQlW3F/r1l9w4jqtOytXS0jQDH0TG48f4/4CqqsD3fSiKAp2DkBmwmKZJZjKpqorOa+I4nhRFmYIgQGfJZsiSJKF6hKMS867/u0Nu2xbVAcgjYiEWW+9ge9M0RffJZgaapsHtdsOzRwIqPuwMdF2HYRjwjLJ5REmSoKL85XUdxxEVA9nBGmLvKcuyNt6aQwG8yvMcV6FwA2zb5t68p+Y54CoUbkDXddyb9xaL8HPNvh0E13Xher3C5XJBh2IYBqoniyVJAA9y6adekWXZonfdv2sHgpZf1rtl+7/7LToDYYAsn5MtXKVpGgjDEMqyREfM/LtBBRBFESrKKf8q+r6Huq7B8zxwHAddyikBYgDu3Mb8SDiRFWYAAAAASUVORK5CYII=\"\r\n        }\r\n    ],\r\n    \"description\": \"Annonce d'Hugo\",\r\n    \"author\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/api/annonces/",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"annonces",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdjBcL2JRQlIrRG9sQUlGR29CQklEWFVxM3lwSGFNUk1FaWtBbVZLUlpxTlRxWWpcL2NnXC9PZGUzZUdaRUdaWUdBQXRVV3ExSldSXC82UmQrZ2RVTUxBeXNcL0xPQkp4MlFiM0pmdmY1K1wvVjhmZzBWbytGMXJCa1h4azlGRm5QcG0xUnpHUnNNTTgxdDE4OE02Z2h0amxqT2dTMmF3TjN4U3VBRlVPS1JoYWZCTnR0bFZjRmtYRjF2YjJOb2F4ME5yNVNPKzR4Ym1pVzRwXC9TT1wvOEFkS28xXC9DUlRVM2xrSmhqZGhrb1doeXFSdEtMblVTYm5HYUJNbWlsbWd3aDAzbWdycEJxWGxUSmhCNkRCSzFoWVlCVERHTXZ0SmtTcEhZK0hKbmRuTWNsRnRvcTBGTUpJeVk4amRQMG1hMWxsMzk4Nm1wQVNmWVJcL0tuZFNqUTkyOWNGRGY4ZmgxSlFTbDVrcWF1WlpNVk1TM3VCTW5cL3Q3c2w5XC9IUDNxdEVnQjE4dkx4YjRyNXpBTDBmbjY0ZVpZWDdZVVdwZ2VzRjdCYUp5VTNrd1h6TzQxTytjXC8zdDE5UHJ3XC9mRDVHeVE3ejVcLzMzTXpmZWI2OVpWa2pMTnJCcllFZEh1bGQwemtTODhUbjZcL2hhN2Y1RWtxa1A0b2FURjZrQ2lJS1c1WkszSGZ0NFhSamZWZzZlUDg0dHBLdzcxV1dKUndTYXJqZVdpM0xUOVF0S3VqcTVOZng4OHZpR0VWS3J0TVpFaWRUeFNnUnBhMFVSK2NuODZPZmJzOHloUDBcLythaFcrUVZyVEFSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjY1NDg1NjQ5LCJpYXQiOjE2NjU0ODIwNDl9.Tj30gLonLu81OFTo5Q5sqsI5_EhYLF5lZcJRqspCQNM",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
